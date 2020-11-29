@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectedFormShow"
+    android:padding="20dp"
+    >
+
+
+    <ScrollView
+        android:id="@+id/sv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+        <LinearLayout
+            android:baselineAligned="@+id/sv"
+            android:id="@+id/sub"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/dynll"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_marginTop="20dp"
+                app:cardElevation="15dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#03bbff"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/subll"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:onClick="submit"
+                        android:textColor="#03bbff"
+                        android:background="@drawable/dynsubmit"
+                        android:layout_margin="5dp"
+                        android:textSize="20dp"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:text="Submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        ></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            <FrameLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+                <com.budiyev.android.codescanner.CodeScannerView
+                    android:id="@+id/scanner_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:autoFocusButtonColor="@android:color/white"
+                    app:autoFocusButtonVisible="true"
+                    app:flashButtonColor="@android:color/white"
+                    app:flashButtonVisible="true"
+                    app:frameColor="@android:color/white"
+                    app:frameCornersSize="50dp"
+                    app:frameCornersRadius="0dp"
+                    app:frameAspectRatioWidth="1"
+                    app:frameAspectRatioHeight="1"
+                    app:frameSize="0.75"
+                    app:frameThickness="2dp"
+                    app:maskColor="#77000000"/>
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

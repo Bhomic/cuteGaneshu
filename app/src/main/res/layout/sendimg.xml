@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="#034472"
+    android:padding="20dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/imgdefault"
+        >
+    </ImageView>
+
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:borderColor="#fffdd0"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp"
+        android:padding="16dp">
+
+        <EditText
+
+            android:id="@+id/caption"
+            android:textColor="#fffdd0"
+
+            android:textColorHint="#fffdd0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Image Caption"  />
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+</LinearLayout>

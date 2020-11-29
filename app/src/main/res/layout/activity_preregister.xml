@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Preregister"
+
+    android:padding="20dp"
+android:background="#034472"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <!--TextView
+
+                android:layout_marginTop="20dp"
+                android:textColor="#03bbff"
+                android:text="Please select the event you want to register for :  "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/regeventsll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+
+            <TextView
+
+                android:layout_marginTop="20dp"
+                android:textColor="#03bbff"
+                android:text="Enter your name : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:id="@+id/regname"
+                android:textColorHint="#9400D3"
+                android:hint="enter your name here : "
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+
+            <TextView
+
+                android:layout_marginTop="20dp"
+                android:textColor="#03bbff"
+                android:text="Enter your roll no : "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:id="@+id/regrollno"
+                android:textColorHint="#9400D3"
+                android:hint="enter your roll no here : "
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textColor="#03bbff"
+                android:text="Choose Your Course :  "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+            <Spinner
+              android:id="@+id/coursespinner"
+
+               android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </Spinner-->
+
+
+            <ImageView
+                android:src="@drawable/logo"
+                android:id="@+id/posteriv"
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_marginTop="20dp"
+                app:cardElevation="15dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#fffdd0"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:textColor="#fffdd0"
+                        android:background="@drawable/dynsubmit"
+                        android:backgroundTint="#034472"
+                        android:layout_margin="5dp"
+                        android:textSize="20dp"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:text="Status : "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        ></TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <com.sanojpunchihewa.glowbutton.GlowButton
+
+                android:onClick="regsubmit"
+                android:id="@+id/readexcel"
+                android:layout_marginTop ="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="30dp"
+                android:text="Register"
+                android:textColor="#034472"
+                app:buttonColor="#fffdd0"
+                app:cornerRadius="50dp"
+                app:glowColor="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:pressedGlowSize="25dp"
+                app:unpressedGlowSize="20dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/subll"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

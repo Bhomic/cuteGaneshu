@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEvents"
+    android:background="#034472"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <ScrollView
+        android:padding="20dp"
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+android:background="#fffdd0"
+                app:mcv_arrowColor="#034472"
+                android:id="@+id/mc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mcv_selectionColor="#034472"
+                app:mcv_showOtherDates="all" />
+
+            <com.hanks.htextview.rainbow.RainbowTextView
+
+                android:id="@+id/rbt"
+                android:background="#00000000"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Selected Date"
+                android:textSize="20sp"
+                app:colorSpace="150dp"
+                app:colorSpeed="4dp"/>
+
+
+
+<LinearLayout
+    android:background="#fffdd0"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <TimePicker
+
+                android:amPmTextColor="#fffdd0"
+                android:id="@+id/tp"
+                android:numbersInnerTextColor="#fffdd0"
+                android:amPmBackgroundColor="#034472"
+                android:outlineSpotShadowColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:outlineAmbientShadowColor="#fffdd0"
+                android:numbersSelectorColor="#fffdd0"
+                android:numbersTextColor="#fffdd0"
+                android:numbersBackgroundColor="#034472"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TimePicker>
+
+</LinearLayout>
+            <com.hanks.htextview.rainbow.RainbowTextView
+
+                android:id="@+id/rbtime"
+                android:background="#00000000"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Selected time"
+                android:textSize="20sp"
+                app:colorSpace="150dp"
+                app:colorSpeed="4dp"/>
+
+
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:borderColor="#fffdd0"
+                app:borderWidth="2dp"
+                app:cornerRadius="8dp"
+                android:padding="16dp">
+
+                <EditText
+
+                    android:id="@+id/nameevent"
+                    android:textColor="#fffdd0"
+
+                    android:textColorHint="#fffdd0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" Event Name"  />
+
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+            <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:borderColor="#fffdd0"
+                app:borderWidth="2dp"
+                app:cornerRadius="8dp"
+                android:padding="16dp">
+
+                <EditText
+
+                    android:id="@+id/qrpass"
+                    android:textColor="#fffdd0"
+
+                    android:textColorHint="#fffdd0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Qr Password"  />
+
+            </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+            <com.rilixtech.materialfancybutton.MaterialFancyButton
+                android:onClick="createeventfun"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                fancy:mfb_focusColor="#034472"
+                fancy:mfb_iconPosition="right"
+                fancy:mfb_fontIconSize="50dp"
+                fancy:mfb_text="Create event"
+                android:textSize="20sp"
+                fancy:mfb_radius="10dp"
+                fancy:mfb_textColor="#034472"
+                fancy:mfb_borderColor="#034472"
+                fancy:mfb_borderWidth="1dp"
+
+                fancy:mfb_defaultColor="#fffdd0"
+                android:id="@+id/materialFancyButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:id="@+id/livelist"
+
+            android:background="#99000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/eventstillnow"
+                android:orientation="vertical"
+                android:background="#99000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

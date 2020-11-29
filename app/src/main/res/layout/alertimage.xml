@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <!--TextView
+
+        android:textColor="#03bbff"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:text="Event : "
+        android:id="@+id/eventname"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/adiv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+    android:src="@drawable/thank"
+        />
+
+
+    <EditText
+        android:id="@+id/aevnameet"
+        android:hint="Enter event name : "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText-->
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/svll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_marginTop="20dp"
+        app:cardElevation="15dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="#03bbff"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/subll"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/createnewevent"
+                android:textColor="#03bbff"
+                android:background="@drawable/dynsubmit"
+                android:layout_margin="5dp"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:text="Create New event ! "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></TextView>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

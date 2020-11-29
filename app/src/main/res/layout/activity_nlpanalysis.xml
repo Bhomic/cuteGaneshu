@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NLPAnalysis"
+    android:background="#034472"
+    >
+
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+<ProgressBar
+    android:id="@+id/progressbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    >
+            </ProgressBar>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.anychart.AnyChartView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.anychart.AnyChartView>
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bmb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:bmb_buttonEnum="ham"
+        app:bmb_piecePlaceEnum="piecePlace_ham_2"
+        app:bmb_buttonPlaceEnum="buttonPlace_ham_2"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

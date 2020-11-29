@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "583364627947",
+    "firebase_url": "https://feedu-ef2eb.firebaseio.com",
+    "project_id": "feedu-ef2eb",
+    "storage_bucket": "feedu-ef2eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583364627947:android:f4c971344aad3e98f05dae",
+        "android_client_info": {
+          "package_name": "com.example.uipro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583364627947-qacc5tkgr9favfqiuekj1i1854t02v5d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uipro",
+            "certificate_hash": "959206939dfc396ed5cd3ca2372bdd40204eb93f"
+          }
+        },
+        {
+          "client_id": "583364627947-bank2att9lauh6eouuerp8hqgbv6ekkc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT-_QUXXnU9fJZwhdDXJhcAIHAE7K2p24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583364627947-bank2att9lauh6eouuerp8hqgbv6ekkc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

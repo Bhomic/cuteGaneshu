@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakeNotes"
+    android:background="#034472">
+<ScrollView
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.sanojpunchihewa.glowbutton.GlowButton
+
+        android:onClick="createnewnotefun"
+        android:id="@+id/gotonote"
+        android:layout_marginTop ="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="30dp"
+        android:text="Create a new note ! "
+        android:textColor="#034472"
+        app:buttonColor="#fffdd0"
+        app:cornerRadius="50dp"
+        app:glowColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pressedGlowSize="25dp"
+        app:unpressedGlowSize="20dp" />
+
+
+    <LinearLayout
+        android:padding="20dp"
+        android:id="@+id/ll"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    </LinearLayout>
+
+
+    <com.sanojpunchihewa.glowbutton.GlowButton
+
+        android:onClick="createdrawnotefun"
+        android:id="@+id/craetdrawnotee"
+        android:layout_marginTop ="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="30dp"
+        android:text="Create a draw note "
+        android:textColor="#034472"
+        app:buttonColor="#fffdd0"
+        app:cornerRadius="50dp"
+        app:glowColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:pressedGlowSize="25dp"
+        app:unpressedGlowSize="20dp" />
+
+
+    <LinearLayout
+
+        android:padding="20dp"
+        android:id="@+id/drawnotell"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

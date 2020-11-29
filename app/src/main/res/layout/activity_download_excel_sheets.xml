@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DownloadExcelSheets"
+
+    android:background="#034472"
+
+    >
+
+
+    <!--com.sanojpunchihewa.glowbutton.GlowButton
+        android:id="@+id/glowButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="124dp"
+        android:padding="20dp"
+        android:text="Default Glow Button"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /-->
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="10dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/headc"
+        >
+
+
+    <TextView
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select an Event to Download Responses"
+        android:textSize="17sp"
+        android:padding="5dp"
+
+        >
+    </TextView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/headc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="20dp"
+        app:layout_constraintTop_toTopOf="@id/headc"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+
+    android:id="@+id/exll"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+</LinearLayout>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+
+            android:onClick="readexcelfun"
+            android:id="@+id/readexcel"
+            android:layout_marginTop ="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:padding="30dp"
+            android:text="Read Last Saved Excel Sheet"
+            android:textColor="#034472"
+            app:buttonColor="#fffdd0"
+            app:cornerRadius="50dp"
+            app:glowColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:pressedGlowSize="25dp"
+            app:unpressedGlowSize="20dp" />
+
+
+        <info.hoang8f.android.segmented.SegmentedGroup
+            android:id="@+id/charttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            app:sc_border_width="2dp"
+            app:sc_corner_radius="10dp"
+            app:sc_tint_color="#fffdd0"
+
+            app:sc_checked_text_color="#034472"
+            >
+
+            <RadioButton
+                android:id="@+id/RADIO"
+                style="@style/RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Radio" />
+
+            <RadioButton
+                android:id="@+id/ET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EditText"
+                style="@style/RadioButton" />
+        </info.hoang8f.android.segmented.SegmentedGroup>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+
+
+                android:padding="10dp"
+                android:background="#00ffffff"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:id="@+id/lastexcel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/tl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TableLayout>
+
+
+
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <TextView
+
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+        </TextView>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="invisible"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:indeterminate="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

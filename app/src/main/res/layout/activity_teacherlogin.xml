@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Teacherlogin"
+    android:background="#034472"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#034472"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".SampleKotlinActivityMonochrome">
+
+        <ru.github.igla.ferriswheel.FerrisWheelView
+            android:id="@+id/ferrisWheelView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:fwv_baseStrokeColor="#ffffff"
+            app:fwv_cabinFillColor="#ffffff"
+            app:fwv_cabinLineStrokeColor="#ffffff"
+            app:fwv_cabinsNumber="10"
+            app:fwv_isAutoRotate="true"
+            app:fwv_isClockwise="true"
+            app:fwv_rotateSpeed="30"
+            app:fwv_wheelStrokeColor="#ffffff"
+
+
+            />
+
+        <ProgressBar
+            android:visibility="invisible"
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:indeterminate="true" />
+
+        <TextView
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"
+            android:text="Loading..."
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+
+    </FrameLayout>
+
+
+<LinearLayout
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#ddffffff"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:borderColor="#034472"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/temail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"  />
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+    <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+
+       android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:borderColor="#034472"
+        app:borderWidth="2dp"
+        app:cornerRadius="8dp"
+        android:padding="16dp">
+
+        <EditText
+
+            android:id="@+id/tpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"  />
+
+    </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+    <com.rilixtech.materialfancybutton.MaterialFancyButton
+
+        android:onClick="teacherloginfun"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        fancy:mfb_focusColor="#ccffffff"
+        fancy:mfb_iconPosition="right"
+        fancy:mfb_fontIconSize="50dp"
+        fancy:mfb_text="LOGIN"
+        android:textSize="20sp"
+        fancy:mfb_radius="10dp"
+        fancy:mfb_textColor="#ffffff"
+        fancy:mfb_borderColor="#034472"
+        fancy:mfb_borderWidth="1dp"
+
+        fancy:mfb_defaultColor="#034472"
+        android:id="@+id/materialFancyButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/waveLoadingView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

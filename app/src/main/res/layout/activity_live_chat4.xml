@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiveChat4"
+    android:id="@+id/outerline"
+        android:background="#034472"
+    android:padding="10dp"
+    >
+
+
+    <ScrollView
+        android:paddingTop="20dp"
+        android:id="@+id/sv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/utils"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="120dp"
+        >
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+           android:layout_marginBottom="40dp"
+            android:id="@+id/ll"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+        </LinearLayout>
+
+     </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/utils"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <Button
+            android:onClick="send"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ico"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="0dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp">
+
+        </Button>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+ android:layout_weight="6"
+
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:borderColor="#fffdd0"
+            app:borderWidth="2dp"
+            app:cornerRadius="8dp"
+            android:padding="16dp"
+
+
+            >
+
+            <EditText
+                android:id="@+id/msg"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:hint="your msg "
+                android:textColor="#fffdd0"
+                android:textColorHint="#fffdd0"
+                >
+            </EditText>
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dd"
+        android:onClick="dd"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/imgbtn"
+        app:layout_goneMarginBottom="20dp"
+        app:layout_goneMarginRight="20dp"
+        app:layout_constraintBottom_toTopOf="@id/utils"
+
+        app:layout_constraintRight_toRightOf="parent"
+        android:onClick="sendimg"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/imgdefault"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="0dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp">
+
+    </Button>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
